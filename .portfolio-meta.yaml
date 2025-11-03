@@ -1,0 +1,57 @@
+# Portfolio Meta Configuration for PPS meta-project
+version: 1.0.0
+
+enforcement: standard  # Meta-project, semi-strict
+no_bypass: false
+justification_required: true
+
+ai_allowed: true  # AI assists with PPS development
+ai_restrictions:
+  - must_update_readme
+  - must_use_structured_tags
+  - must_update_agents_md
+
+contributors: solo
+primary_contributor: chris
+
+risk_level: high  # PPS affects all future projects - high impact
+risk_factors:
+  correctness: high  # Bugs in scaffolding affect many projects
+  safety: medium  # Governance enforcement errors
+  collaboration: medium  # Future: others might use PPS
+
+require_adr: true  # Design decisions critical
+adr_triggers:
+  - architecture_changes
+  - breaking_changes
+  - template_structure_changes
+
+require_agents_md: true  # AI works on PPS development
+agents_md_sections:
+  - project_structure
+  - common_commands
+  - gotchas
+  - ai_guidelines
+
+require_pr_template: false  # Solo work
+pr_template: standard
+
+require_tests: false  # Automation scripts, manual validation initially
+test_coverage_threshold: 0
+
+governed_by: portfolio-meta
+
+last_reviewed: 2025-10-29
+review_frequency: monthly
+
+tags:
+  - meta-project
+  - scaffolding
+  - automation
+  - governance
+  - templates
+  - ai-assisted
+  - high-impact
+
+remote_repo_url: https://github.com/ChrisClements1987/portfolio-project-scaffolding-system
+visibility: public
