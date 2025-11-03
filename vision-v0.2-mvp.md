@@ -1,9 +1,10 @@
 # Portfolio Project Scaffolding System - v0.2 MVP Vision
 
 **Version:** 0.2.0  
-**Date:** 2025-10-29  
-**Status:** Planning  
-**Location:** `/00-meta/21-meta-projects/2025-10-portfolio-governance-tooling-and-hardening/`
+**Date:** 2025-11-03  
+**Status:** Phase 1 Complete, Phase 2 In Progress  
+**Location:** `/00-meta/21-meta-projects/portfolio-project-scaffolding-system/`  
+**GitHub:** https://github.com/ChrisClements1987/portfolio-project-scaffolding-system
 
 ---
 
@@ -20,20 +21,22 @@
 ### What v0.2 Delivers
 
 **Core Capability:**
-- ✅ CLI tool (`pps` - Portfolio Project Scaffolding)
-- ✅ Create project from template boilerplate
-- ✅ Apply governance configs (.portfolio-meta.yaml, security scanning, etc.)
-- ✅ Create GitHub repository (via gh CLI)
-- ✅ Clone to correct domain/folder in portfolio
-- ✅ Initial v0.1.0 commit with all guardrails active
-- ✅ 3-5 starter boilerplate templates
+- ✅ **DONE:** CLI tool framework (`pps` - Portfolio Project Scaffolding) - Phase 1 complete
+- ✅ **DONE:** 7 starter boilerplate templates (5 complete, 2 in progress)
+- ✅ **DONE:** Schema with remote_repo_url and visibility fields
+- 🏗️ **IN PROGRESS:** Create project from template boilerplate (variable substitution)
+- 🏗️ **IN PROGRESS:** Apply governance configs (.portfolio-meta.yaml, security scanning)
+- 🏗️ **IN PROGRESS:** Create GitHub repository (via gh CLI)
+- 📋 **PLANNED:** Initialize git and set remote in correct domain/folder
+- 📋 **PLANNED:** Initial v0.1.0 commit with all guardrails active
+- 📋 **PLANNED:** Concept graduation from ideas-inbox
 
 **What v0.2 Does NOT Include:**
 - ❌ GUI (CLI only, GUI in future release)
 - ❌ Template sync/updates across repos (v0.3+)
 - ❌ REST API fallback (gh CLI only in MVP)
 - ❌ Advanced features (custom template creation, template marketplace, etc.)
-- ❌ Full ideas-inbox migration (manual for MVP)
+- ❌ Automatic ideas-inbox migration (manual workflow supported)
 
 ---
 
