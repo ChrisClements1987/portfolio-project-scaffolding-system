@@ -29,7 +29,7 @@ overview:
     initialization based on project type.
 
 status:
-  lifecycle_stage: "active"
+  lifecycle_stage: "completed"
   health: "healthy"
   percent_complete: 85
   last_status_update: "2025-11-21"
