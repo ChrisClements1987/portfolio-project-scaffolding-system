@@ -1,0 +1,184 @@
+# Project Metadata - Portfolio Project Scaffolding System
+# Schema Version: 2.0
+# Last Updated: 2025-11-19
+
+metadata:
+  schema_version: "2.0"
+  project_id: "pps"
+  project_name: "Portfolio Project Scaffolding System"
+  project_slug: "portfolio-project-scaffolding-system"
+  domain: "meta"
+  type: "automation"
+  created_date: "2025-10-29"
+  last_updated: "2025-11-19"
+
+overview:
+  tagline: "CLI tool for scaffolding portfolio projects with governance from day one"
+  description: >
+    Automated system for creating new portfolio projects with proper structure,
+    metadata, and governance alignment. Ensures consistency across all projects
+    by enforcing standards defined in 00-meta/02-governance/.
+  
+  problem_statement: >
+    Manual project creation leads to inconsistent structure, missing metadata,
+    and incomplete governance compliance. Projects need standardized scaffolding.
+  
+  solution_approach: >
+    CLI tool that reads boilerplates from 00-meta/30-resources/10-boilerplates/ and generates
+    complete project structures with required files, metadata, and version control
+    initialization based on project type.
+
+status:
+  lifecycle_stage: "active"
+  health: "healthy"
+  percent_complete: 40
+  last_status_update: "2025-11-19"
+  
+  current_phase: "implementation"
+  start_date: "2025-10-29"
+  target_completion: "2025-12-31"
+  
+  active_milestone:
+    name: "Core CLI Implementation"
+    description: "Build PowerShell CLI with project type classification and basic scaffolding"
+    target_date: "2025-12-15"
+    percent_complete: 35
+
+people:
+  owner: "Christopher Clements"
+  owner_email: "clements.christopher1@gmail.com"
+  contributors: ["solo"]
+  stakeholders: ["portfolio-owner"]
+
+version_control:
+  type: "git"
+  platform: "github"
+  visibility: "public"
+  
+  primary_remote:
+    name: "origin"
+    url: "https://github.com/ChrisClements1987/portfolio-project-scaffolding-system"
+    branch: "master"
+  
+  sync_strategy: "continuous"
+  backup_strategy: "github-primary"
+  
+  rationale: >
+    Code-heavy automation project requiring version history, branching,
+    and public visibility for potential community use. Git is optimal.
+  
+  history_retention: "indefinite"
+  
+  additional_notes: >
+    Public repo to enable sharing with others who might use portfolio methodology.
+    Master branch is primary. Local changes pushed regularly.
+
+objectives:
+  primary_goals:
+    - "Automate project creation with 100% governance compliance"
+    - "Reduce project setup time from 30+ minutes to <2 minutes"
+    - "Enforce metadata schema v2.0 and version control initialization"
+  
+  success_criteria:
+    - "Can create any project type with single CLI command"
+    - "All generated projects pass Test-PortfolioHealth.ps1 validation"
+    - "Version control properly initialized per project type"
+    - "Documentation clear enough for future Chris to use without re-learning"
+  
+  key_deliverables:
+    - name: "Initialize-Project.ps1"
+      description: "Main CLI entry point for project creation"
+      status: "planned"
+    
+    - name: "Classify-ProjectType.ps1"
+      description: "Interactive wizard for determining project type and version control"
+      status: "planned"
+    
+    - name: "Project boilerplates"
+      description: "Complete templates in 00-meta/40-boilerplates/ for all project types"
+      status: "in-progress"
+    
+    - name: "User guide"
+      description: "Documentation in 00-meta/30-resources/ for using scaffolding system"
+      status: "not-started"
+
+context:
+  parent_projects: []
+  child_projects: []
+  related_projects:
+    - slug: "portfolio-rebranding"
+      relationship: "parallel-meta-improvement"
+      description: "Both improving portfolio infrastructure"
+  
+  depends_on:
+    - "00-meta/30-resources/10-boilerplates/ (structural templates)"
+    - "00-meta/02-governance/00-standards-and-policies/standards/metadata-and-taxonomy/project-metadata-schema.md"
+    - "00-meta/02-governance/00-standards-and-policies/policies/security-and-compliance/version-control-policy.md"
+    - "00-meta/02-governance/01-processes/ (process documentation)"
+    - "00-meta/00-metamodel/ (entity definitions and glossary)"
+  
+  blocks: []
+  
+  domain_context: "meta"
+  area_alignment: []
+
+tags:
+  primary_tags: ["automation", "scaffolding", "governance", "cli"]
+  technology_tags: ["powershell", "yaml", "templates"]
+  domain_tags: ["meta", "portfolio-infrastructure"]
+  workflow_tags: ["project-initialization", "version-control"]
+
+files:
+  key_files:
+    - path: "README.md"
+      purpose: "Project overview and quick reference"
+    
+    - path: "VISION.md"
+      purpose: "Detailed vision and requirements"
+    
+    - path: "project-brief.md"
+      purpose: "Original project brief"
+    
+    - path: ".portfolio-meta.yaml"
+      purpose: "Governance configuration (legacy, migrate to project.yaml)"
+    
+    - path: "implementation/"
+      purpose: "CLI scripts and core logic"
+    
+    - path: "analysis/"
+      purpose: "Research and project type taxonomy"
+  
+  documentation_location: "README.md and VISION.md"
+  
+  assets_location: "N/A"
+
+notes:
+  key_decisions:
+    - "Use PowerShell for CLI (portfolio-native scripting language)"
+    - "Separate boilerplates (40-boilerplates/) from execution logic (30-automation/)"
+    - "Enforce metadata schema v2.0 for all new projects"
+    - "Integrate version control initialization into scaffolding workflow"
+  
+  risks:
+    - risk: "Breaking changes to schema affect all scaffolding"
+      mitigation: "Version schema, provide migration tools"
+      severity: "high"
+    
+    - risk: "CLI complexity makes it unusable"
+      mitigation: "Progressive disclosure, simple defaults, good help text"
+      severity: "medium"
+  
+  lessons_learned: []
+  
+  future_considerations:
+    - "Support for project templates beyond PARA structure"
+    - "Integration with GitHub CLI for remote repo creation"
+    - "Project promotion automation (concept → experiment → project)"
+
+links:
+  repository: "https://github.com/ChrisClements1987/portfolio-project-scaffolding-system"
+  documentation: "https://github.com/ChrisClements1987/portfolio-project-scaffolding-system/blob/master/README.md"
+  related_policies:
+    - "00-meta/02-governance/00-standards-and-policies/version-control-policy.md"
+    - "00-meta/02-governance/01-processes/project-initialization-and-lifecycle.md"
+    - "00-meta/02-governance/00-standards-and-policies/schemas/project-metadata-schema.md"

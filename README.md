@@ -1,8 +1,8 @@
 # Portfolio Project Scaffolding System (PPS)
 
-**Version:** 1.1.0  
-**Last Updated:** 2025-11-03  
-**Location:** `/00-meta/21-meta-projects/portfolio-project-scaffolding-system/`  
+**Version:** 1.2.0  
+**Last Updated:** 2025-11-21  
+**Location:** `/00-meta/10-projects/portfolio-project-scaffolding-system/`  
 **GitHub:** https://github.com/ChrisClements1987/portfolio-project-scaffolding-system
 
 ---
@@ -125,13 +125,11 @@ Meta-project for developing the Portfolio Project Scaffolding System - a CLI too
 - [portfolio-meta-template.yaml](/00-meta/50-schemas/portfolio-meta-template.yaml) - Template with comments
 
 **Templates (available):**
-- ✅ `/00-meta/40-templates/project-boilerplates/python-cli-tool/` - CLI utilities
-- ✅ `/00-meta/40-templates/project-boilerplates/python-web-app/` - Full-stack web apps
-- ✅ `/00-meta/40-templates/project-boilerplates/powershell-utility/` - Windows utilities
-- ✅ `/00-meta/40-templates/project-boilerplates/minimal-experiment/` - Quick prototypes
-- ✅ `/00-meta/40-templates/project-boilerplates/meta-project/` - Portfolio meta-projects
-- 🚧 `/00-meta/40-templates/project-boilerplates/tier1-business/` - High-stakes business projects
-- 🚧 `/00-meta/40-templates/project-boilerplates/tier2-community/` - OSS/community projects
+- ✅ `/00-meta/30-resources/10-boilerplates/project-boilerplates/python-cli-tool/` - CLI utilities
+- ✅ `/00-meta/30-resources/10-boilerplates/project-boilerplates/python-web-app/` - Full-stack web apps
+- ✅ `/00-meta/30-resources/10-boilerplates/project-boilerplates/powershell-utility/` - Windows utilities
+- ✅ `/00-meta/30-resources/10-boilerplates/project-boilerplates/minimal-experiment/` - Quick prototypes
+- ✅ `/00-meta/30-resources/10-boilerplates/project-boilerplates/meta-project/` - Portfolio meta-projects
 
 ---
 
